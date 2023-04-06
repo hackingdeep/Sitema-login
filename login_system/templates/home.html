@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sistem-login-register
+{% endblock %}
+
+{% block content %}
+    
+
+<div class="row " style="margin-top: 200px;">
+    <div class="col-sm-6 mb-3 mb-sm-0 " >
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">DJANGO-LOGIN</h5>
+          <p class="card-text">Si ya haz creado una cuenta prueba el LOGIN</p>
+          <a href="{% url 'login' %}" class="btn btn-primary">Probar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">DJANGO-REGISTER</h5>
+          <p class="card-text">Si aun no tienes tu cuenta prueba crear una</p>
+          <a href="{% url 'register' %}" class="btn btn-primary">Probar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
